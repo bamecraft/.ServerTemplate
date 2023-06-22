@@ -1,9 +1,9 @@
 version: "3"
 services:
-  TEMPLATE:
+  TEMPLATE_EDIT_HERE:
     build:
       context: .
-    container_name: TEMPLATE
+    container_name: TEMPLATE_EDIT_HERE
     restart: unless-stopped
     volumes:
       - ./server:/server

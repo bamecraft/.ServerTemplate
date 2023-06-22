@@ -2,13 +2,6 @@
 
 # ---- BEGIN OF CONFIG SECTION ---- #
 
-# Tips:
-#   You can split value as variable
-#   e.g.
-#       minecraftVersion='1.19.4'
-#       artifactName=$(curl -fsSL -H 'accept: application/json' 'https://example.com/api/${minecraftVersion}/json' | jq -r '.artifacts[1].fileName')
-#       downloadUrl="https://example.com/download/${artifactName}"
-
 # Mandatory variables
 downloadUrl=""
 allocatedMemorySize=""
@@ -47,4 +40,4 @@ fi
 
 # Run server
 echo 'Booting server...'
-java -Xmx${allocatedMemorySize} -Xms${allocatedMemorySize} ${additionalJvmArguments} -jar server.jar --nogui
+java -Xmx${allocatedMemorySize} -Xms${allocatedMemorySize} ${additionalJvmArguments} -jar server.jar nogui
