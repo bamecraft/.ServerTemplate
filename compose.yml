@@ -8,9 +8,4 @@ services:
     volumes:
       - ./server:/server
       - /etc/localtime:/etc/localtime:ro
-    network_mode: bridge
-    ports:
-      - target: 25565
-        published: 25565
-        protocol: tcp
-        mode: host
+    network_mode: host
